@@ -27,6 +27,9 @@
         .hobby-card { border: 1px solid #f1f5f9; transition: all 0.3s ease; }
         .hobby-card:hover { border-color: #3b82f6; background-color: #f8fafc; transform: scale(1.02); }
 
+        .research-card { border-left: 4px solid #f1f5f9; padding-left: 1.5rem; margin-bottom: 2rem; transition: border-color 0.3s; }
+        .research-card:hover { border-color: #1e40af; }
+
         /* FIXED HEADSHOT STYLING */
         .headshot-container {
             width: 7rem;
@@ -61,6 +64,7 @@
                 <a class="nav-link active flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="home">Perspective</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="mystory">My Story</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="trajectory">Trajectory</a>
+                <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="research">Technical Research</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="hobbies">Hobbies</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="competencies">Strategy Pillars</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="achievements">Impact</a>
@@ -140,6 +144,45 @@
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">2017</span>
                             <h4 class="text-xl font-bold text-slate-900 mt-1">Business Analyst</h4>
                             <p class="text-slate-500 text-sm mt-1 leading-relaxed">Building the foundational data-driven models to uncover market truths.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-panel hidden" id="research">
+                    <h3 class="text-3xl font-bold text-slate-900 mb-8">Technical Research & Engineering Roots</h3>
+                    <p class="text-slate-500 mb-10 text-lg">My executive decisions are grounded in a decade of experience managing multi-million dollar technical budgets and engineering complex smart grid ecosystems.</p>
+                    
+                    <div class="mb-12">
+                        <h4 class="text-blue-600 font-bold text-[10px] tracking-[0.3em] uppercase mb-6">Research Summary</h4>
+                        <p class="text-slate-600 leading-relaxed mb-6">During my tenure at the <strong>National University of Singapore</strong>, my work focused on the evolution of <strong>Smart Grid Energy Management Systems (EMS)</strong>. I specialized in utilizing <strong>Multi-Agent Systems (MAS)</strong>, fuzzy logic, and reinforcement learning to optimize distributed energy resources, electric vehicle integration, and competitive electricity market modeling.</p>
+                        <a href="https://www.researchgate.net/profile/Bharat-Menon-Radhakrishnan-2/research" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-widest hover:bg-blue-700 transition">View ResearchGate Profile →</a>
+                    </div>
+
+                    <h4 class="text-blue-600 font-bold text-[10px] tracking-[0.3em] uppercase mb-8">Selected Publications</h4>
+                    <div class="space-y-6 text-slate-600">
+                        <div class="research-card">
+                            <h5 class="font-bold text-slate-900">Game-Theory based dynamic pricing strategies for demand side management in smart grids</h5>
+                            <p class="text-xs text-slate-500 mt-1 italic">Energy Journal (2017)</p>
+                        </div>
+                        <div class="research-card">
+                            <h5 class="font-bold text-slate-900">A multi-agent based distributed energy management scheme for smart grid applications</h5>
+                            <p class="text-xs text-slate-500 mt-1 italic">Energy Journal (2016)</p>
+                        </div>
+                        <div class="research-card">
+                            <h5 class="font-bold text-slate-900">Fuzzy-based multi-agent system for distributed energy management in smart grids</h5>
+                            <p class="text-xs text-slate-500 mt-1 italic">Intl. Journal of Uncertainty, Fuzziness and Knowledge-Based Systems (2016)</p>
+                        </div>
+                        <div class="research-card">
+                            <h5 class="font-bold text-slate-900">An adaptive fuzzy based relay for protection of distribution networks</h5>
+                            <p class="text-xs text-slate-500 mt-1 italic">IEEE International Conference on Fuzzy Systems (2015)</p>
+                        </div>
+                        <div class="research-card">
+                            <h5 class="font-bold text-slate-900">A reinforcement learning algorithm for agent-based computational economics (ACE) model of electricity markets</h5>
+                            <p class="text-xs text-slate-500 mt-1 italic">IEEE Congress on Evolutionary Computation (2015)</p>
+                        </div>
+                        <div class="research-card">
+                            <h5 class="font-bold text-slate-900">Descriptive Models for Reserve and Regulation Prices in Competitive Electricity Markets</h5>
+                            <p class="text-xs text-slate-500 mt-1 italic">IEEE Transactions on Smart Grid (2014)</p>
                         </div>
                     </div>
                 </section>
