@@ -21,10 +21,13 @@
         .timeline-line { position: absolute; left: 1.25rem; top: 0; bottom: 0; width: 1px; background: #cbd5e1; }
         .timeline-node { position: absolute; left: 0.95rem; width: 0.65rem; height: 0.65rem; border-radius: 50%; background: #1e40af; border: 2px solid #fff; z-index: 1; }
 
+        .pillar-card { border: 1px solid #f1f5f9; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: #ffffff; }
+        .pillar-card:hover { border-color: #3b82f6; transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05); }
+
         .hobby-card { border: 1px solid #f1f5f9; transition: all 0.3s ease; }
         .hobby-card:hover { border-color: #3b82f6; background-color: #f8fafc; transform: scale(1.02); }
 
-        /* FIXED HEADSHOT STYLING */
+        /* FIXED HEADSHOT STYLING - Adjusted to prevent cutting off at eyes */
         .headshot-container {
             width: 7rem;
             height: 7rem;
@@ -37,7 +40,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 20%; /* Adjusted to ensure face is visible and not cut off at the eyes */
+            object-position: center 10%; /* Ensures face is visible */
         }
     </style>
 </head>
@@ -56,9 +59,9 @@
             
             <div class="mt-4 space-y-1">
                 <a class="nav-link active flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="home">Perspective</a>
-                <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="mystory">Narrative</a>
+                <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="mystory">My Story</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="trajectory">Trajectory</a>
-                <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="hobbies">Intellectual Curiosity</a>
+                <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="hobbies">Hobbies</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="competencies">Strategy Pillars</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="achievements">Impact</a>
                 <a class="nav-link flex items-center px-10 py-4 text-xs uppercase tracking-widest text-slate-500" data-target="experience">Background</a>
@@ -80,25 +83,28 @@
                 <section class="content-panel" id="home">
                     <h3 class="text-blue-600 font-bold text-[10px] tracking-[0.4em] uppercase mb-8">Executive Mandate</h3>
                     <p class="text-4xl md:text-6xl font-bold text-slate-900 mb-12 leading-[1.1] tracking-tight">
-                        Scaling enterprise value through digital transformation and operational rigor.
+                        Scaling enterprise value through digital transformation and operational rigor. [cite: 33, 47]
                     </p>
                     <div class="grid md:grid-cols-2 gap-16">
                         <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
-                            <p>I am a transformation-focused executive with a rare trajectory from Analyst to CEO in eight years. I specialize in evolving traditional B2B models into high-growth, multi-channel e-commerce powerhouses.</p>
-                            <p>My approach bridges technical engineering foundations with strategic innovation, utilizing data-driven "truths" to architect resilient global supply chains and explosive revenue streams.</p>
+                            <p>I am a transformation-focused executive with a career trajectory spanning from Analyst to CEO in a span of eight years. [cite: 35, 96] I specialize in evolving traditional B2B models into high-growth, multi-channel e-commerce powerhouses. [cite: 47, 104]</p>
+                            <p>My approach bridges technical engineering foundations with strategic innovation, utilizing data-driven "truths" to architect resilient global supply chains and explosive revenue streams. [cite: 33, 34, 55]</p>
                         </div>
-                        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-sm text-slate-500 italic">
-                            "In an era of market volatility, growth is no longer about maintaining pace—it's about the speed of the pivot. My focus is on building high-performance cultures that thrive on accountability and AI-enabled efficiency."
+                        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest text-blue-600">The CEO Perspective</h4>
+                            <p class="text-sm text-slate-500 leading-relaxed italic">"In an era of market volatility, growth is no longer about maintaining pace—it's about the speed of the pivot. [cite: 47, 49] My focus is on building high-performance cultures that thrive on accountability, creative bravery, and AI-enabled efficiency." [cite: 36, 60]</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-panel hidden" id="mystory">
-                    <h3 class="text-3xl font-bold text-slate-900 mb-12">The 8-Year Ascent</h3>
+                    <h3 class="text-3xl font-bold text-slate-900 mb-12">The Journey from Engineer to Entrepreneur</h3>
                     <div class="max-w-3xl text-slate-600 text-lg leading-relaxed space-y-8">
-                        <p>In 2016, I moved to the United States to pursue a master's degree in Innovation Management & Entrepreneurship at <strong>Brown University</strong>. My background was in engineering—I earned a master's degree in electrical engineering from the National University of Singapore and spent years solving complex problems in green energy. But I wanted to go beyond technical expertise and deepen my understanding of business strategy.</p>
+                        <p>In 2016, I made a life-changing decision: I moved to the United States to pursue a master's degree in Innovation Management & Entrepreneurship at <strong>Brown University</strong>. [cite: 3, 70-73, 125] My background was in engineering—I earned a master's degree in electrical engineering from the <strong>National University of Singapore</strong> and spent years solving complex problems and publishing research in green energy. [cite: 4, 74-77, 126] But I wanted to go beyond technical expertise and deepen my understanding of business strategy. [cite: 5]</p>
                         
-                        <p>In 2017, I joined <strong>Pentagon Safety Equipment</strong> as a Business Operations Engineer. When the global pandemic hit in 2020, I founded and led our e-commerce division from scratch. The results were transformative: digital sales skyrocketed from $10,000 to over <strong>$1,000,000</strong> within three years. Today, e-commerce accounts for 90% of our total sales.</p>
+                        <p>In 2017, I joined <strong>Pentagon Safety Equipment</strong> as a Business Operations Engineer. [cite: 7, 9, 98, 99] At the time, we were heavily reliant on traditional wholesale—a risky model where losing even one major account could significantly impact sales. [cite: 13, 14] I saw untapped potential and a critical need for a strategic shift to e-commerce. [cite: 12, 16]</p>
+                        
+                        <p>When the global pandemic hit in 2020, I founded and led our e-commerce division from scratch. [cite: 15, 17, 104] The results were transformative: digital sales skyrocketed from $10,000 to over <strong>$1,000,000</strong> within three years. [cite: 18] Today, e-commerce accounts for 90% of our total sales. [cite: 18] This journey from the ground floor to the CEO office taught me that sustainable growth requires the perfect blend of technical rigor and operational agility. [cite: 10, 18, 103]</p>
                     </div>
                 </section>
 
@@ -109,61 +115,71 @@
                             <div class="timeline-node" style="background: #1e40af; transform: scale(1.5);"></div>
                             <span class="text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em]">2024 - Present</span>
                             <h4 class="text-2xl font-bold text-slate-900 mt-1">Chief Executive Officer</h4>
+                            <p class="text-slate-500 text-sm mt-2 leading-relaxed">Executive mandate for full P&L ownership, enterprise vision, and multi-vertical expansion. [cite: 44, 47, 103]</p>
                         </div>
                         <div class="relative pl-12">
                             <div class="timeline-node"></div>
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">2023</span>
                             <h4 class="text-xl font-bold text-slate-900 mt-1">Chief Operating Officer</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Directing cross-border logistics and global supply chain networks. [cite: 44, 55, 102]</p>
                         </div>
-                        <div class="relative pl-12 opacity-80">
+                        <div class="relative pl-12">
                             <div class="timeline-node"></div>
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">2021</span>
                             <h4 class="text-xl font-bold text-slate-900 mt-1">Director of Strategy</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Architecting the digital-first pivot and e-commerce growth story. [cite: 44, 101, 104]</p>
                         </div>
-                        <div class="relative pl-12 opacity-60">
+                        <div class="relative pl-12">
+                            <div class="timeline-node"></div>
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">2019</span>
+                            <h4 class="text-xl font-bold text-slate-900 mt-1">Operations Manager</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Leading cross-functional teams to launch new business verticals. [cite: 100, 107]</p>
+                        </div>
+                        <div class="relative pl-12">
                             <div class="timeline-node"></div>
                             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">2017</span>
                             <h4 class="text-xl font-bold text-slate-900 mt-1">Business Analyst</h4>
+                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Building the foundational data-driven models to uncover market truths. [cite: 34, 95, 99]</p>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-panel hidden" id="hobbies">
                     <h3 class="text-3xl font-bold text-slate-900 mb-8">Intellectual Curiosity</h3>
-                    <p class="text-slate-500 mb-10 text-lg">Even when I'm not in the boardroom, my mindset remains fixed on building, Curating, and competing.</p>
+                    <p class="text-slate-500 mb-10 text-lg">Even in my downtime, my mindset remains fixed on building, curating, and competing.</p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div class="hobby-card p-8 rounded-2xl flex flex-col">
                             <span class="text-2xl mb-4">🏠</span>
                             <h4 class="font-bold text-slate-900 mb-2">The Ultimate Pillar</h4>
-                            <p class="text-sm text-slate-500 flex-grow leading-relaxed">My biggest support and the pillar of my life is my wife. Spending quality time together is how I recharge and maintain perspective on what truly matters.</p>
+                            <p class="text-sm text-slate-500 flex-grow leading-relaxed">My biggest support and the pillar of my life is my wife, Rashmi Menon. Spending quality time together is how I recharge and Spending quality time together is how I recharge and maintain perspective on what truly matters.</p>
                         </div>
                         
                         <div class="hobby-card p-8 rounded-2xl flex flex-col">
                             <span class="text-2xl mb-4">🏏</span>
                             <h4 class="font-bold text-slate-900 mb-2">Professional Cricket</h4>
-                            <p class="text-sm text-slate-500 mb-4 flex-grow leading-relaxed">I bring the same strategic rigor to the pitch. I play professional-grade cricket, focusing on leadership and team discipline.</p>
+                            <p class="text-sm text-slate-500 mb-4 flex-grow leading-relaxed">I bring the same strategic rigor to the pitch. I play as a captain and leader in competitive leagues.</p>
                             <a href="https://cricclubs.com/vlccl/viewPlayer.do?playerId=6345095&clubId=146" target="_blank" class="text-xs font-bold text-blue-600 uppercase tracking-widest hover:underline">View Player Profile →</a>
                         </div>
 
                         <div class="hobby-card p-8 rounded-2xl flex flex-col">
                             <span class="text-2xl mb-4">🎬</span>
                             <h4 class="font-bold text-slate-900 mb-2">Cinema Curation</h4>
-                            <p class="text-sm text-slate-500 mb-4 flex-grow leading-relaxed">I don't just watch movies; I build platforms for them. I created FlixCatalog to streamline discovery and cataloging.</p>
+                            <p class="text-sm text-slate-500 mb-4 flex-grow leading-relaxed">I built FlixCatalog to streamline discovery and cataloging, merging my passion for movies with my drive to build digital products.</p>
                             <a href="https://flixcatalog.com/" target="_blank" class="text-xs font-bold text-blue-600 uppercase tracking-widest hover:underline">Visit FlixCatalog →</a>
                         </div>
 
                         <div class="hobby-card p-8 rounded-2xl flex flex-col">
                             <span class="text-2xl mb-4">📈</span>
-                            <h4 class="font-bold text-slate-900 mb-2">Financial Markets</h4>
-                            <p class="text-sm text-slate-500 mb-4 flex-grow leading-relaxed">Working on **Tradersgram** and **ChartMatch**—educational apps designed to help new investors navigate markets with data-driven confidence.</p>
+                            <h4 class="font-bold text-slate-900 mb-2">Financial Strategy</h4>
+                            <p class="text-sm text-slate-500 mb-4 flex-grow leading-relaxed">Developing **Tradersgram** and **ChartMatch**—educational platforms designed to introduce new traders to market fundamentals.</p>
                             <span class="text-[10px] font-bold text-slate-400 uppercase">In Development</span>
                         </div>
 
-                        <div class="hobby-card p-8 rounded-2xl flex flex-col bg-blue-50/50 border-blue-100">
+                        <div class="hobby-card p-8 rounded-2xl flex flex-col bg-slate-50 border-slate-200">
                             <span class="text-2xl mb-4">💻</span>
                             <h4 class="font-bold text-blue-900 mb-2">Vibe Coding</h4>
-                            <p class="text-sm text-slate-600 flex-grow leading-relaxed">My latest frontier—using AI to bridge the gap between human creativity and rapid software prototyping. This is where strategy meets the future of build.</p>
+                            <p class="text-sm text-slate-600 flex-grow leading-relaxed">Utilizing AI to bridge human creativity and rapid software prototyping—where strategy meets the future of the build.</p>
                         </div>
                     </div>
                 </section>
@@ -171,35 +187,91 @@
                 <section class="content-panel hidden" id="competencies">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="pillar-card p-10 rounded-2xl">
-                            <h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Executive Leadership</h4>
+                            <h4 class="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest text-blue-600">Executive Leadership</h4>
                             <ul class="text-sm space-y-4 text-slate-500">
-                                <li>P&L Management & Capital Allocation</li>
-                                <li>Strategic Board Relations</li>
-                                <li>High-Performance Culture Building</li>
+                                <li>• P&L Ownership & Growth Strategy [cite: 40, 44, 123]</li>
+                                <li>• Strategic Board Relations & Alignment [cite: 41, 123]</li>
+                                <li>• Talent Mentorship & Culture Building [cite: 41, 60, 114]</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-card p-10 rounded-2xl">
+                            <h4 class="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest text-blue-600">Operational Architecture</h4>
+                            <ul class="text-sm space-y-4 text-slate-500">
+                                <li>• Global Supply Chain Resilience (SE Asia/India) [cite: 39, 55, 115]</li>
+                                <li>• 3PL & Logistics Workflow Optimization [cite: 39, 56, 111]</li>
+                                <li>• Workflow Automation & Scalable Systems [cite: 39, 111, 123]</li>
+                            </ul>
+                        </div>
+                        <div class="pillar-card p-10 rounded-2xl">
+                            <h4 class="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest text-blue-600">E-Commerce Growth</h4>
+                            <ul class="text-sm space-y-4 text-slate-500">
+                                <li>• Multi-Channel GTM Playbook Design [cite: 38, 104, 123]</li>
+                                <li>• Amazon Seller Central Ecosystem Expert [cite: 88, 105]</li>
+                                <li>• Brand Re-engineering & Market Expansion [cite: 51, 52, 123]</li>
                             </ul>
                         </div>
                         <div class="pillar-card p-10 rounded-2xl border-blue-100 bg-blue-50/30">
-                            <h4 class="font-bold text-blue-900 mb-4 uppercase text-xs tracking-widest">Data & AI Intelligence</h4>
+                            <h4 class="font-bold text-blue-900 mb-6 uppercase text-xs tracking-widest">Data & AI Intelligence</h4>
                             <ul class="text-sm space-y-4 text-blue-800/70 font-medium">
-                                <li>Google AI Professional Applications</li>
-                                <li>Predictive Supply Chain KPI Modeling</li>
-                                <li>Market Transformation Insights</li>
+                                <li>• Google AI Professional Cert Applications</li>
+                                <li>• Predictive Supply Chain KPI Modeling [cite: 110, 112, 123]</li>
+                                <li>• Market "Truth" Analysis & Data Synthesis [cite: 33, 34, 112]</li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
                 <section class="content-panel hidden" id="achievements">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-                        <div class="group border-l-2 border-slate-100 pl-8 py-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
                             <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">100x</span>
                             <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">Amazon Growth</h5>
-                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Architected a digital transformation that realized a 100x increase in revenue within 24 months.</p>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Architected a digital transformation that realized a 100x increase in revenue in 24 months. [cite: 50, 105]</p>
                         </div>
-                        <div class="group border-l-2 border-slate-100 pl-8 py-2">
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
                             <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">40%</span>
                             <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">OpEx Reduction</h5>
-                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Re-engineered 3PL fulfillment workflows, cutting operational overhead costs by 40%.</p>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Re-engineered 3PL workflows, cutting operational overhead costs by 40%. [cite: 56, 111]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">300%</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">YoY Revenue</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Drove explosive growth in underserved verticals via truth-based market insights. [cite: 51, 107]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">$250K</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">Capital Funding</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Secured preferred share capital to fund international expansion and resilience. [cite: 54, 109]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">25%</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">CAC Optimization</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Repositioned the brand, reducing Customer Acquisition Cost by 25%. [cite: 52, 107]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">15%</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">Margin Expansion</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Renegotiated SE Asia supply chains to improve gross margins by 15%. [cite: 55, 115]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">35%</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">Order Accuracy</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Improved order accuracy by 35% through custom logistics dashboards. [cite: 111, 112]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">30%</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">Time-to-Market</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Accelerated initiative launch times by 30% via high-performance mentorship. [cite: 61, 114]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">$2.5M</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">Budget Oversight</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Directed a $2.5M technical budget at NUS, meeting all high-stakes project KPIs. [cite: 65, 118]</p>
+                        </div>
+                        <div class="border-l-2 border-slate-100 pl-8 py-2">
+                            <span class="text-4xl font-bold text-slate-900 leading-none tracking-tighter">99%</span>
+                            <h5 class="text-xs font-bold text-blue-600 mt-2 uppercase tracking-widest">Digital Integrity</h5>
+                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">Maintained near-perfect accuracy rate across all multi-channel digital divisions. [cite: 56]</p>
                         </div>
                     </div>
                 </section>
@@ -210,6 +282,26 @@
                             <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-blue-200">Featured Credential</p>
                             <h4 class="text-2xl font-bold mt-4">Google AI Professional Certificate</h4>
                             <p class="text-blue-100 mt-2 font-medium">Applied AI for Enterprise Strategy & Growth Intelligence (2026)</p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="p-8 border border-slate-100 rounded-2xl">
+                                <h4 class="font-bold text-slate-900">M.Sc. Innovation Management & Entrepreneurship</h4>
+                                <p class="text-blue-600 font-bold text-xs mt-1 uppercase tracking-widest">Brown University [cite: 72, 125]</p>
+                            </div>
+                            <div class="p-8 border border-slate-100 rounded-2xl">
+                                <h4 class="font-bold text-slate-900">M.Sc. Electrical Engineering</h4>
+                                <p class="text-blue-600 font-bold text-xs mt-1 uppercase tracking-widest text-blue-400">National University of Singapore [cite: 76, 126]</p>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="p-8 border border-slate-100 rounded-2xl bg-white">
+                                <h4 class="font-bold text-slate-900">B.E. Electrical & Electronics Engineering</h4>
+                                <p class="text-blue-600 font-bold text-xs mt-1 uppercase tracking-widest">Anna University [cite: 79, 127]</p>
+                            </div>
+                            <div class="p-8 border border-slate-100 rounded-2xl bg-white">
+                                <h4 class="font-bold text-slate-900">Operations Management Certification</h4>
+                                <p class="text-blue-600 font-bold text-xs mt-1 uppercase tracking-widest">UIUC [cite: 84, 128]</p>
+                            </div>
                         </div>
                     </div>
                 </section>
